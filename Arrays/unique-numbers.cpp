@@ -18,8 +18,9 @@ int main(){
   vector<int> nums(n);
   for(int i=0;i<n;i++)cin>>nums[i];
   int count=countUnique(nums,n);
-  for(int i=0;i<count;i++){
-    cout<<nums[i]<<' ';
+  cout<<count;
+  for(auto it:nums){
+    cout<<it<<" ";
   }
   return 0;
 }
